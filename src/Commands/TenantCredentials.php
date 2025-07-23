@@ -1,14 +1,14 @@
 <?php
 
-namespace Slides\Saml2\Commands;
+namespace Ldx\Saml2\Commands;
 
-use Slides\Saml2\Helpers\ConsoleHelper;
-use Slides\Saml2\Repositories\TenantRepository;
+use Ldx\Saml2\Helpers\ConsoleHelper;
+use Ldx\Saml2\Repositories\TenantRepository;
 
 /**
  * Class TenantCredentials
  *
- * @package Slides\Saml2\Commands
+ * @package Ldx\Saml2\Commands
  */
 class TenantCredentials extends \Illuminate\Console\Command
 {

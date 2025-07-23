@@ -1,13 +1,13 @@
 <?php
 
-namespace Slides\Saml2\Commands;
+namespace Ldx\Saml2\Commands;
 
-use Slides\Saml2\Repositories\TenantRepository;
+use Ldx\Saml2\Repositories\TenantRepository;
 
 /**
  * Class DeleteTenant
  *
- * @package Slides\Saml2\Commands
+ * @package Ldx\Saml2\Commands
  */
 class DeleteTenant extends \Illuminate\Console\Command
 {

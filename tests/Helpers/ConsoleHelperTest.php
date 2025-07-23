@@ -1,9 +1,9 @@
 <?php
 
-namespace Slides\Saml2\Tests;
+namespace Ldx\Saml2\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Slides\Saml2\Helpers\ConsoleHelper;
+use Ldx\Saml2\Helpers\ConsoleHelper;
 
 class ConsoleHelperTest extends TestCase
 {

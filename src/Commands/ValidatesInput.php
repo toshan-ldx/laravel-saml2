@@ -1,11 +1,11 @@
 <?php
 
-namespace Slides\Saml2\Commands;
+namespace Ldx\Saml2\Commands;
 
 /**
  * Trait ValidatesInput
  *
- * @package Slides\Saml2\Commands
+ * @package Ldx\Saml2\Commands
  */
 trait ValidatesInput
 {

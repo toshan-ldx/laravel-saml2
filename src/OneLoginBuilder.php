@@ -1,18 +1,18 @@
 <?php
 
-namespace Slides\Saml2;
+namespace Ldx\Saml2;
 
 use OneLogin\Saml2\Auth as OneLoginAuth;
 use OneLogin\Saml2\Utils as OneLoginUtils;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Contracts\Container\Container;
-use Slides\Saml2\Models\Tenant;
+use Ldx\Saml2\Models\Tenant;
 use Illuminate\Support\Arr;
 
 /**
  * Class OneLoginBuilder
  *
- * @package Slides\Saml2
+ * @package Ldx\Saml2
  */
 class OneLoginBuilder
 {
@@ -83,8 +83,8 @@ class OneLoginBuilder
             return new OneLoginAuth($oneLoginConfig);
         });
 
-        $this->app->singleton('Slides\Saml2\Auth', function ($app) {
-            return new \Slides\Saml2\Auth($app['OneLogin_Saml2_Auth'], $this->tenant);
+        $this->app->singleton('Ldx\Saml2\Auth', function ($app) {
+            return new \Ldx\Saml2\Auth($app['OneLogin_Saml2_Auth'], $this->tenant);
         });
     }
 

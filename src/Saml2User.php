@@ -1,14 +1,14 @@
 <?php
 
-namespace Slides\Saml2;
+namespace Ldx\Saml2;
 
 use OneLogin\Saml2\Auth as OneLoginAuth;
-use Slides\Saml2\Models\Tenant;
+use Ldx\Saml2\Models\Tenant;
 
 /**
  * Class Saml2User
  *
- * @package Slides\Saml2
+ * @package Ldx\Saml2
  */
 class Saml2User
 {
