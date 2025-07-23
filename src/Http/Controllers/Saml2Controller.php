@@ -64,7 +64,7 @@ class Saml2Controller extends Controller
 
         event(new SignedIn($user, $auth));
 
-        $redirectUrl = $user->getIntendedUrl();
+        $redirectUrl = session('_sso_redirect_url') ?? $user->getIntendedUrl();
 
         if ($redirectUrl) {
             return redirect($redirectUrl);
